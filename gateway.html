@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MP Gateway</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<link rel="shortcut icon" href="image/mp_icon.png">
+	<link rel="stylesheet" type="text/css" href="css/myCSS.css">
+	<script type="text/javascript" src="js/showgateway.js"></script>
+
+</head>
+<body>
+
+<div>
+	<nav class="navbar navbar-default" id="navstyle">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html"><img src="image/mp_logo.png" height="28px"></a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li><a href="gateway.html">Gateway</a></li>
+				<li><a href="device.html">Device</a></li>
+				<li><a href="data.html">Data</a></li>
+			</ul>
+		</div>
+	</div>
+	</nav>
+</div>
+
+<div class="container-fluid" align="center" style="margin-bottom: 20px;">
+	<h2>Gateway Status</h2>
+</div>
+
+<div class="container-fluid" align="center">
+	<div id="gwschart" style="display: inline-block;">
+		<script type="text/javascript" src="js/gwschart.js"></script>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<h3>Gateway List</h3>
+
+	<div>
+		<table id="gatewaytable" class="table table-hover">
+			<thead>
+				<tr>
+					<th>Gateway</th>
+					<th>Location</th>
+					<th>Status</th>
+					<th>Configuration Page (Admin only)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!--tr>
+					<td>IoT Field</td>
+					<td style="color: #009900;">ONLINE</td>
+					<td><a href="http://158.108.226.18:8000" target="_blank"><button class="btn btn-default">Go</button></a></td>
+				</tr-->
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<!--div class="container-fluid" align="center">
+	<div align="left" style="background-color: #d5ffbf; width: 25%; padding: 1px 0 1px 10px;">
+		<h3 style="display: block; position: relative; left: 20px;">HomeIoT</h3>
+		<button class="btn btn-primary" style="display: block; position: relative; left: 80%;">Go</button>
+		<p>Bangkok</p>
+		<p style="color: green;">ONLINE</p>
+	</div>
+	<div style="background-color: #d5ffbf">
+		<h3>Topic 2</h3>
+	</div>
+	<div style="background-color: #d5ffbf">
+		<h3>Topic 3</h3>
+	</div>
+</div-->
+
+</body>
+</html>

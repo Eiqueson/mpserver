@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MP Gateway</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<link rel="shortcut icon" href="image/mp_icon.png">
+	<link rel="stylesheet" type="text/css" href="css/myCSS.css">
+	<script type="text/javascript" src="js/showdata.js"></script>
+
+</head>
+<body>
+
+<div>
+	<nav class="navbar navbar-default" id="navstyle">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html"><img src="image/mp_logo.png" height="28px"></a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li><a href="gateway.html">Gateway</a></li>
+				<li><a href="device.html">Device</a></li>
+				<li><a href="data.html">Data</a></li>
+			</ul>
+		</div>
+	</div>
+	</nav>
+</div>
+
+<div class="container-fluid">
+	<h2>Data</h2>
+	<div>
+		<h4>Choose a Gateway Device</h4>
+		<select class="form-control" id="gatewaydev" name="gatewaydev" style="width: 240px; display: inline-block;">
+			
+		</select>
+		<input style="display: inline-block;" class="btn btn-default" id="listDeviceBtn" type="button" name="listDeviceBtn" value="Select">
+	</div>
+
+	<div id="deviceList" style="display: none;">
+		<h4>Choose a Device</h4>
+		<select class="form-control" id="devdata" name="devdata" style="width: 240px; display: inline-block;">
+			
+		</select>
+		<input style="display: inline-block;" class="btn btn-default" id="showDataBtn" type="button" name="showDataBtn" value="Show Data">
+	</div>
+
+	<div>
+		<table id="datatable" class="table table-hover">
+			<thead>
+				<tr>
+					<th>Topic</th>
+					<th>Data</th>
+					<th>Timestamp</th>
+				</tr>
+			</thead>
+			<tbody>
+
+			</tbody>
+		</table>
+	</div>
+</div>
+
+
+
+</body>
+<!--footer class="footer">
+	<div>
+		<p align="right">by Wannasak</p>
+	</div>
+</footer-->
+</html>
